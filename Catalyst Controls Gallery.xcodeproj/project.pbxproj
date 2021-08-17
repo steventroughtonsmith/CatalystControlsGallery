@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0455F1D26CC34DE00751B6A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F1C26CC34DE00751B6A /* App.swift */; };
+		B0455F1F26CC34DE00751B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F1E26CC34DE00751B6A /* ContentView.swift */; };
+		B0455F2126CC34DF00751B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0455F2026CC34DF00751B6A /* Assets.xcassets */; };
+		B0455F2426CC34DF00751B6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0455F2326CC34DF00751B6A /* Preview Assets.xcassets */; };
+		B0455F2D26CC35BC00751B6A /* HIButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F2C26CC35BC00751B6A /* HIButtonsView.swift */; };
+		B0455F2F26CC35E000751B6A /* HICheckboxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F2E26CC35E000751B6A /* HICheckboxesView.swift */; };
+		B0455F3126CC36F400751B6A /* HIRadioButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3026CC36F400751B6A /* HIRadioButtonsView.swift */; };
+		B0455F3326CC382800751B6A /* HIPopUpControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3226CC382800751B6A /* HIPopUpControlsView.swift */; };
+		B0455F3626CC38CF00751B6A /* Number+Scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3526CC38CF00751B6A /* Number+Scaling.swift */; };
+		B0455F3826CC3C0A00751B6A /* HISlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3726CC3C0A00751B6A /* HISlidersView.swift */; };
+		B0455F3A26CC3D3200751B6A /* HIProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3926CC3D3200751B6A /* HIProgressIndicatorView.swift */; };
+		B0455F3D26CC40A200751B6A /* HITextFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3C26CC40A200751B6A /* HITextFieldsView.swift */; };
+		B0455F3F26CC420A00751B6A /* HIGroupBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F3E26CC420A00751B6A /* HIGroupBoxView.swift */; };
+		B0455F4126CC436C00751B6A /* HITabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F4026CC436C00751B6A /* HITabView.swift */; };
+		B09DC23426CC530900804044 /* HISwitchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23326CC530900804044 /* HISwitchesView.swift */; };
+		B09DC23626CC625900804044 /* HISegmentedControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23526CC625900804044 /* HISegmentedControlView.swift */; };
+		B09DC23826CC642A00804044 /* HITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23726CC642A00804044 /* HITabViewController.swift */; };
+		B09DC23B26CC73D600804044 /* HITextViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23A26CC73D600804044 /* HITextViewsView.swift */; };
+		B09DC23D26CC749300804044 /* HILabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23C26CC749300804044 /* HILabelsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0455F1926CC34DE00751B6A /* Catalyst Controls Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalyst Controls Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0455F1C26CC34DE00751B6A /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		B0455F1E26CC34DE00751B6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0455F2026CC34DF00751B6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0455F2326CC34DF00751B6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B0455F2526CC34DF00751B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0455F2B26CC34E500751B6A /* HIToolbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HIToolbox.entitlements; sourceTree = "<group>"; };
+		B0455F2C26CC35BC00751B6A /* HIButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIButtonsView.swift; sourceTree = "<group>"; };
+		B0455F2E26CC35E000751B6A /* HICheckboxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HICheckboxesView.swift; sourceTree = "<group>"; };
+		B0455F3026CC36F400751B6A /* HIRadioButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIRadioButtonsView.swift; sourceTree = "<group>"; };
+		B0455F3226CC382800751B6A /* HIPopUpControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIPopUpControlsView.swift; sourceTree = "<group>"; };
+		B0455F3526CC38CF00751B6A /* Number+Scaling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Scaling.swift"; sourceTree = "<group>"; };
+		B0455F3726CC3C0A00751B6A /* HISlidersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HISlidersView.swift; sourceTree = "<group>"; };
+		B0455F3926CC3D3200751B6A /* HIProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIProgressIndicatorView.swift; sourceTree = "<group>"; };
+		B0455F3C26CC40A200751B6A /* HITextFieldsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITextFieldsView.swift; sourceTree = "<group>"; };
+		B0455F3E26CC420A00751B6A /* HIGroupBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIGroupBoxView.swift; sourceTree = "<group>"; };
+		B0455F4026CC436C00751B6A /* HITabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITabView.swift; sourceTree = "<group>"; };
+		B09DC23326CC530900804044 /* HISwitchesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HISwitchesView.swift; sourceTree = "<group>"; };
+		B09DC23526CC625900804044 /* HISegmentedControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HISegmentedControlView.swift; sourceTree = "<group>"; };
+		B09DC23726CC642A00804044 /* HITabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITabViewController.swift; sourceTree = "<group>"; };
+		B09DC23A26CC73D600804044 /* HITextViewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITextViewsView.swift; sourceTree = "<group>"; };
+		B09DC23C26CC749300804044 /* HILabelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HILabelsView.swift; sourceTree = "<group>"; };
+		B09DC23E26CC784100804044 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0455F1626CC34DE00751B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0455F1026CC34DE00751B6A = {
+			isa = PBXGroup;
+			children = (
+				B09DC23E26CC784100804044 /* README.md */,
+				B0455F1B26CC34DE00751B6A /* App */,
+				B0455F1A26CC34DE00751B6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0455F1A26CC34DE00751B6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F1926CC34DE00751B6A /* Catalyst Controls Gallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0455F1B26CC34DE00751B6A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F2B26CC34E500751B6A /* HIToolbox.entitlements */,
+				B0455F3526CC38CF00751B6A /* Number+Scaling.swift */,
+				B0455F1C26CC34DE00751B6A /* App.swift */,
+				B0455F1E26CC34DE00751B6A /* ContentView.swift */,
+				B09DC23926CC6ED100804044 /* Pages */,
+				B0455F2026CC34DF00751B6A /* Assets.xcassets */,
+				B0455F2526CC34DF00751B6A /* Info.plist */,
+				B0455F2226CC34DF00751B6A /* Preview Content */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B0455F2226CC34DF00751B6A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F2326CC34DF00751B6A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B09DC23926CC6ED100804044 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F2C26CC35BC00751B6A /* HIButtonsView.swift */,
+				B0455F2E26CC35E000751B6A /* HICheckboxesView.swift */,
+				B09DC23326CC530900804044 /* HISwitchesView.swift */,
+				B0455F3026CC36F400751B6A /* HIRadioButtonsView.swift */,
+				B0455F3226CC382800751B6A /* HIPopUpControlsView.swift */,
+				B0455F3726CC3C0A00751B6A /* HISlidersView.swift */,
+				B0455F3926CC3D3200751B6A /* HIProgressIndicatorView.swift */,
+				B09DC23C26CC749300804044 /* HILabelsView.swift */,
+				B0455F3C26CC40A200751B6A /* HITextFieldsView.swift */,
+				B09DC23A26CC73D600804044 /* HITextViewsView.swift */,
+				B0455F3E26CC420A00751B6A /* HIGroupBoxView.swift */,
+				B0455F4026CC436C00751B6A /* HITabView.swift */,
+				B09DC23726CC642A00804044 /* HITabViewController.swift */,
+				B09DC23526CC625900804044 /* HISegmentedControlView.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0455F1826CC34DE00751B6A /* Catalyst Controls Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0455F2826CC34DF00751B6A /* Build configuration list for PBXNativeTarget "Catalyst Controls Gallery" */;
+			buildPhases = (
+				B0455F1526CC34DE00751B6A /* Sources */,
+				B0455F1626CC34DE00751B6A /* Frameworks */,
+				B0455F1726CC34DE00751B6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Catalyst Controls Gallery";
+			productName = "HI Toolbox";
+			productReference = B0455F1926CC34DE00751B6A /* Catalyst Controls Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0455F1126CC34DE00751B6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B0455F1826CC34DE00751B6A = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = B0455F1426CC34DE00751B6A /* Build configuration list for PBXProject "Catalyst Controls Gallery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0455F1026CC34DE00751B6A;
+			productRefGroup = B0455F1A26CC34DE00751B6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0455F1826CC34DE00751B6A /* Catalyst Controls Gallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0455F1726CC34DE00751B6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0455F2426CC34DF00751B6A /* Preview Assets.xcassets in Resources */,
+				B0455F2126CC34DF00751B6A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0455F1526CC34DE00751B6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0455F3826CC3C0A00751B6A /* HISlidersView.swift in Sources */,
+				B0455F3F26CC420A00751B6A /* HIGroupBoxView.swift in Sources */,
+				B09DC23626CC625900804044 /* HISegmentedControlView.swift in Sources */,
+				B0455F3D26CC40A200751B6A /* HITextFieldsView.swift in Sources */,
+				B0455F3126CC36F400751B6A /* HIRadioButtonsView.swift in Sources */,
+				B09DC23826CC642A00804044 /* HITabViewController.swift in Sources */,
+				B0455F2F26CC35E000751B6A /* HICheckboxesView.swift in Sources */,
+				B0455F3326CC382800751B6A /* HIPopUpControlsView.swift in Sources */,
+				B0455F1F26CC34DE00751B6A /* ContentView.swift in Sources */,
+				B0455F3A26CC3D3200751B6A /* HIProgressIndicatorView.swift in Sources */,
+				B09DC23D26CC749300804044 /* HILabelsView.swift in Sources */,
+				B0455F1D26CC34DE00751B6A /* App.swift in Sources */,
+				B0455F4126CC436C00751B6A /* HITabView.swift in Sources */,
+				B09DC23426CC530900804044 /* HISwitchesView.swift in Sources */,
+				B0455F2D26CC35BC00751B6A /* HIButtonsView.swift in Sources */,
+				B0455F3626CC38CF00751B6A /* Number+Scaling.swift in Sources */,
+				B09DC23B26CC73D600804044 /* HITextViewsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0455F2626CC34DF00751B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0455F2726CC34DF00751B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0455F2926CC34DF00751B6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/HIToolbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highcaffeinecontent.HI-Toolbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		B0455F2A26CC34DF00751B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/HIToolbox.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZDN69KUUV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.highcaffeinecontent.HI-Toolbox";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0455F1426CC34DE00751B6A /* Build configuration list for PBXProject "Catalyst Controls Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0455F2626CC34DF00751B6A /* Debug */,
+				B0455F2726CC34DF00751B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0455F2826CC34DF00751B6A /* Build configuration list for PBXNativeTarget "Catalyst Controls Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0455F2926CC34DF00751B6A /* Debug */,
+				B0455F2A26CC34DF00751B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0455F1126CC34DE00751B6A /* Project object */;
+}
