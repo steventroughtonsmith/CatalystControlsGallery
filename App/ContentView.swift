@@ -28,7 +28,7 @@ struct ContentView: View {
 					HISlidersView()
 					HIProgressIndicatorView()
 					HISegmentedControlView()
-					
+					HIColorsView()
 				}
 				.padding()
 			}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01614FE26CC7D580001D1BF /* HIColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01614FD26CC7D580001D1BF /* HIColorsView.swift */; };
 		B0455F1D26CC34DE00751B6A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F1C26CC34DE00751B6A /* App.swift */; };
 		B0455F1F26CC34DE00751B6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0455F1E26CC34DE00751B6A /* ContentView.swift */; };
 		B0455F2126CC34DF00751B6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0455F2026CC34DF00751B6A /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B01614FD26CC7D580001D1BF /* HIColorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HIColorsView.swift; sourceTree = "<group>"; };
 		B0455F1926CC34DE00751B6A /* Catalyst Controls Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Catalyst Controls Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0455F1C26CC34DE00751B6A /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B0455F1E26CC34DE00751B6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				B0455F4026CC436C00751B6A /* HITabView.swift */,
 				B09DC23726CC642A00804044 /* HITabViewController.swift */,
 				B09DC23526CC625900804044 /* HISegmentedControlView.swift */,
+				B01614FD26CC7D580001D1BF /* HIColorsView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				B09DC23D26CC749300804044 /* HILabelsView.swift in Sources */,
 				B0455F1D26CC34DE00751B6A /* App.swift in Sources */,
 				B0455F4126CC436C00751B6A /* HITabView.swift in Sources */,
+				B01614FE26CC7D580001D1BF /* HIColorsView.swift in Sources */,
 				B09DC23426CC530900804044 /* HISwitchesView.swift in Sources */,
 				B0455F2D26CC35BC00751B6A /* HIButtonsView.swift in Sources */,
 				B0455F3626CC38CF00751B6A /* Number+Scaling.swift in Sources */,
