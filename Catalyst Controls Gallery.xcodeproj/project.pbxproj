@@ -77,6 +77,7 @@
 				B0455F1A26CC34DE00751B6A /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		B0455F1A26CC34DE00751B6A /* Products */ = {
 			isa = PBXGroup;
