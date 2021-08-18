@@ -7,31 +7,28 @@
 
 import SwiftUI
 
-struct HIProgressView: View, UIViewRepresentable {
-	typealias UIViewType = UIProgressView
-	let view = UIProgressView()
-	var value = Float(0)
+struct HIProgressView: UIViewRepresentable {
+	let value: Float
 	
-	func makeUIView(context: Context) -> UIViewType {
-		return view
+	func makeUIView(context: Context) -> UIProgressView {
+		UIProgressView()
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UIProgressView, context: Context) {
 		view.progress = value
 	}
 }
 
-struct HIActivityIndicatorView: View, UIViewRepresentable {
-	typealias UIViewType = UIActivityIndicatorView
-	let view = UIActivityIndicatorView()
-	var active = false
-	
-	func makeUIView(context: Context) -> UIViewType {
+struct HIActivityIndicatorView: UIViewRepresentable {
+	let active: Bool
+
+	func makeUIView(context: Context) -> UIActivityIndicatorView {
+		let view = UIActivityIndicatorView()
 		view.hidesWhenStopped = false
 		return view
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UIActivityIndicatorView, context: Context) {
 		if active == true {
 			view.startAnimating()
 		}
@@ -48,9 +45,9 @@ struct HIProgressIndicatorView: View {
 		VStack(alignment:.leading) {
 			Text("Progress Views")
 				.bold()
-			
+
 			HIProgressView(value: 0.5)
-			HIActivityIndicatorView()
+			HIActivityIndicatorView(active: false)
 			HIActivityIndicatorView(active: true)
 		}
 		.padding()

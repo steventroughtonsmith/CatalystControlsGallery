@@ -7,37 +7,30 @@
 
 import SwiftUI
 
-struct HIBorderedTextFieldView: View, UIViewRepresentable {
-	typealias UIViewType = UITextField
-	let view = UITextField()
-	
-	var placeholder = ""
-	var borderStyle = UITextField.BorderStyle.none
-	
-	func makeUIView(context: Context) -> UIViewType {
-		return view
+struct HIBorderedTextFieldView: UIViewRepresentable {
+	let placeholder: String
+	let borderStyle: UITextField.BorderStyle
+
+	func makeUIView(context: Context) -> UITextField {
+		UITextField()
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UITextField, context: Context) {
 		view.placeholder = placeholder
 		view.borderStyle = borderStyle
 	}
 }
 
-struct HISearchFieldView: View, UIViewRepresentable {
-	typealias UIViewType = UISearchTextField
-	let view = UISearchTextField()
-	
-	var placeholder = ""
-	var borderStyle = UITextField.BorderStyle.roundedRect
-	
-	func makeUIView(context: Context) -> UIViewType {
-		return view
+struct HISearchFieldView: UIViewRepresentable {
+	let placeholder: String
+
+	func makeUIView(context: Context) -> UISearchTextField {
+		return UISearchTextField()
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UISearchTextField, context: Context) {
 		view.placeholder = placeholder
-		view.borderStyle = borderStyle
+		view.borderStyle = .roundedRect
 	}
 }
 

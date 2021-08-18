@@ -8,20 +8,25 @@
 import SwiftUI
 import UIKit
 
+struct HIDateTimePicker: UIViewRepresentable {
+	let mode: UIDatePicker.Mode
+	let date: Binding<Date>
 
-struct HIDateTimePicker: View, UIViewRepresentable {
-	typealias UIViewType = UIDatePicker
-	let view = UIDatePicker()
-	var mode = UIDatePicker.Mode.dateAndTime
-	
-	func makeUIView(context: Context) -> UIViewType {
+	func makeUIView(context: Context) -> UIDatePicker {
+		let view = UIDatePicker()
 		view.locale = NSLocale(localeIdentifier: "en_GB") as Locale
 		view.timeZone = TimeZone(identifier: "UTC")
+		view.addAction(UIAction { [weak view] _ in
+			guard let view = view else { return }
+			date.wrappedValue = view.date
+			view.setDate(date.wrappedValue, animated: true)
+		}, for: .valueChanged)
 		return view
 	}
-	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+
+	func updateUIView(_ view: UIDatePicker, context: Context) {
 		view.datePickerMode = mode
+		view.setDate(date.wrappedValue, animated: true)
 	}
 }
 
@@ -35,8 +40,8 @@ struct HIPickersView: View {
 			
 			HStack {
 				Text("Starts:")
-				HIDateTimePicker(mode:.date)
-				HIDateTimePicker(mode:.time)
+				HIDateTimePicker(mode:.date, date: $a)
+				HIDateTimePicker(mode:.time, date: $a)
 			}
 		}
 		.padding()

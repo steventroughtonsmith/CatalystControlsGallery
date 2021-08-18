@@ -7,18 +7,22 @@
 
 import SwiftUI
 
-struct HISwitchView: View, UIViewRepresentable {
-	typealias UIViewType = UISwitch
-	let view = UISwitch()
-	var value = false
-	
-	func makeUIView(context: Context) -> UIViewType {
+struct HISwitchView: UIViewRepresentable {
+	var isOn: Binding<Bool>
+
+	func makeUIView(context: Context) -> UISwitch {
+		let view = UISwitch()
 		view.preferredStyle = .sliding
+		view.addAction(UIAction { [weak view] _ in
+			guard let view = view else { return }
+			isOn.wrappedValue = view.isOn
+			view.setOn(isOn.wrappedValue, animated: true)
+		}, for: .primaryActionTriggered)
 		return view
 	}
-	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
-		view.isOn = value
+
+	func updateUIView(_ view: UISwitch, context: Context) {
+		view.setOn(isOn.wrappedValue, animated: true)
 	}
 }
 
@@ -35,11 +39,15 @@ struct HISwitchesView: View {
 			VStack(alignment:.leading) {
 				HStack {
 					Text("One")
-					HISwitchView(value: a)
+					HISwitchView(isOn: $a)
 				}
 				HStack {
 					Text("Two")
-					HISwitchView(value: b)
+					HISwitchView(isOn: $b)
+				}
+				HStack {
+					Text("Always On")
+					HISwitchView(isOn: .constant(true))
 				}
 			}
 			
