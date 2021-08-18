@@ -15,26 +15,26 @@ struct HISegmentedControlView: View {
 		VStack(alignment:.leading) {
 			Text("Segmented Controls")
 				.bold()
-			
-			Picker(selection: $a, label:Group{}, content: {
-				Text("One")
-					.tag(0)
-				Text("Two")
-					.tag(1)
-				Text("Three")
-					.tag(2)
-			})
-			.pickerStyle(SegmentedPickerStyle())
-			
-			Picker(selection: $b, label:Group{}, content: {
-				Image(systemName: "star")
-					.tag(0)
-				Image(systemName: "square")
-					.tag(1)
-				Image(systemName: "circle")
-					.tag(2)
-			})
-			.pickerStyle(SegmentedPickerStyle())
+
+			HStack {
+				Picker(selection: $a, label:Group{}, content: {
+					Text("One")
+						.tag(0)
+					Text("Two")
+						.tag(1)
+					Text("Three")
+						.tag(2)
+				})
+
+				Picker(selection: $b, label:Group{}, content: {
+					Image(systemName: "star")
+						.tag(0)
+					Image(systemName: "square")
+						.tag(1)
+					Image(systemName: "circle")
+						.tag(2)
+				})
+			}.pickerStyle(SegmentedPickerStyle())
 		}
 		.padding()
 	}
