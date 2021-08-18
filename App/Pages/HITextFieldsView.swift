@@ -9,18 +9,16 @@ import SwiftUI
 
 struct HIBorderedTextFieldView: View, UIViewRepresentable {
 	typealias UIViewType = UITextField
-	let view = UITextField()
-	
+
 	var placeholder = ""
-	var borderStyle = UITextField.BorderStyle.none
-	
 	func makeUIView(context: Context) -> UIViewType {
+		let view = UITextField()
+		view.borderStyle = .bezel
 		return view
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UIViewType, context: Context) {
 		view.placeholder = placeholder
-		view.borderStyle = borderStyle
 	}
 }
 
@@ -50,8 +48,9 @@ struct HITextFieldsView: View {
 				.bold()
 			
 			HStack {
-				HIBorderedTextFieldView(placeholder:"Type here…", borderStyle: .bezel)
-				HIBorderedTextFieldView(placeholder:"Type here…", borderStyle: .roundedRect)
+				HIBorderedTextFieldView(placeholder: "Type here…")
+				TextField("Type here…", text: $a)
+					.textFieldStyle(RoundedBorderTextFieldStyle())
 				HISearchFieldView(placeholder:"Search…")
 			}
 		}
