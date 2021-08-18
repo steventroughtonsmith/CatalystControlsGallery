@@ -69,6 +69,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FB1EF626CD909A00BEF049 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F3226CC382800751B6A /* HIPopUpControlsView.swift */,
+				B0455F3726CC3C0A00751B6A /* HISlidersView.swift */,
+				B0455F3926CC3D3200751B6A /* HIProgressIndicatorView.swift */,
+				B09DC23526CC625900804044 /* HISegmentedControlView.swift */,
+				B01614FD26CC7D580001D1BF /* HIColorsView.swift */,
+				B00301E426CC9D9D00707A74 /* HIPickersView.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		85FB1EF726CD90C800BEF049 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				B0455F3E26CC420A00751B6A /* HIGroupBoxView.swift */,
+				B0455F4026CC436C00751B6A /* HITabView.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		85FB1EF826CD90E700BEF049 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				B09DC23C26CC749300804044 /* HILabelsView.swift */,
+				B0455F3C26CC40A200751B6A /* HITextFieldsView.swift */,
+				B09DC23A26CC73D600804044 /* HITextViewsView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		B0455F1026CC34DE00751B6A = {
 			isa = PBXGroup;
 			children = (
@@ -91,10 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				B0455F2B26CC34E500751B6A /* HIToolbox.entitlements */,
-				B0455F3526CC38CF00751B6A /* Number+Scaling.swift */,
 				B0455F1C26CC34DE00751B6A /* App.swift */,
 				B0455F1E26CC34DE00751B6A /* ContentView.swift */,
-				B09DC23926CC6ED100804044 /* Pages */,
+				B09DC23926CC6ED100804044 /* Buttons */,
+				85FB1EF626CD909A00BEF049 /* Controls */,
+				85FB1EF726CD90C800BEF049 /* Containers */,
+				85FB1EF826CD90E700BEF049 /* Text */,
+				B0455F3526CC38CF00751B6A /* Number+Scaling.swift */,
+				B09DC23726CC642A00804044 /* HITabViewController.swift */,
 				B0455F2026CC34DF00751B6A /* Assets.xcassets */,
 				B0455F2526CC34DF00751B6A /* Info.plist */,
 				B0455F2226CC34DF00751B6A /* Preview Content */,
@@ -110,27 +146,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B09DC23926CC6ED100804044 /* Pages */ = {
+		B09DC23926CC6ED100804044 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				B0455F2C26CC35BC00751B6A /* HIButtonsView.swift */,
 				B0455F2E26CC35E000751B6A /* HICheckboxesView.swift */,
-				B09DC23326CC530900804044 /* HISwitchesView.swift */,
 				B0455F3026CC36F400751B6A /* HIRadioButtonsView.swift */,
-				B0455F3226CC382800751B6A /* HIPopUpControlsView.swift */,
-				B0455F3726CC3C0A00751B6A /* HISlidersView.swift */,
-				B0455F3926CC3D3200751B6A /* HIProgressIndicatorView.swift */,
-				B09DC23C26CC749300804044 /* HILabelsView.swift */,
-				B0455F3C26CC40A200751B6A /* HITextFieldsView.swift */,
-				B09DC23A26CC73D600804044 /* HITextViewsView.swift */,
-				B0455F3E26CC420A00751B6A /* HIGroupBoxView.swift */,
-				B0455F4026CC436C00751B6A /* HITabView.swift */,
-				B09DC23726CC642A00804044 /* HITabViewController.swift */,
-				B09DC23526CC625900804044 /* HISegmentedControlView.swift */,
-				B01614FD26CC7D580001D1BF /* HIColorsView.swift */,
-				B00301E426CC9D9D00707A74 /* HIPickersView.swift */,
+				B09DC23326CC530900804044 /* HISwitchesView.swift */,
 			);
-			path = Pages;
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
