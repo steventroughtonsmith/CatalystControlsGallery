@@ -9,22 +9,6 @@ import SwiftUI
 import UIKit
 
 
-struct HIDateTimePicker: View, UIViewRepresentable {
-	typealias UIViewType = UIDatePicker
-	let view = UIDatePicker()
-	var mode = UIDatePicker.Mode.dateAndTime
-	
-	func makeUIView(context: Context) -> UIViewType {
-		view.locale = NSLocale(localeIdentifier: "en_GB") as Locale
-		view.timeZone = TimeZone(identifier: "UTC")
-		return view
-	}
-	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
-		view.datePickerMode = mode
-	}
-}
-
 struct HIPickersView: View {
 	@State var a = Date()
 	
@@ -33,11 +17,7 @@ struct HIPickersView: View {
 			Text("Date & Time Pickers")
 				.bold()
 			
-			HStack {
-				Text("Starts:")
-				HIDateTimePicker(mode:.date)
-				HIDateTimePicker(mode:.time)
-			}
+			DatePicker("Starts:", selection: $a)
 		}
 		.padding()
 	}
