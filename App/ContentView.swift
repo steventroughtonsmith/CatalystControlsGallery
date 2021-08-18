@@ -25,7 +25,7 @@ struct ContentView: View {
 			}
 			
 			ScrollView {
-				VStack (alignment:.leading) {
+				VStack (alignment:.leading, spacing: 0) {
 					HIPopUpControlsView()
 					HISlidersView()
 					HIProgressIndicatorView()
