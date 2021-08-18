@@ -8,21 +8,22 @@
 import SwiftUI
 import UIKit
 
-struct HIColorWell: View, UIViewRepresentable {
-	typealias UIViewType = UIColorWell
-	let view = UIColorWell()
-	var action:(_ color:UIColor?) -> Void = { color in }
-	
-	func makeUIView(context: Context) -> UIViewType {
+struct HIColorWell: UIViewRepresentable {
+	let action: (_ color:UIColor?) -> Void
+
+	private static let actionID = UIAction.Identifier(UUID().uuidString)
+
+	func makeUIView(context: Context) -> UIColorWell {
+		let view = UIColorWell()
 		view.selectedColor = .red
 		return view
 	}
-	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
-		
-		view.addAction(UIAction(handler: { _ in
+
+	func updateUIView(_ view: UIColorWell, context: Context) {
+		view.removeAction(identifiedBy: Self.actionID, for: .valueChanged)
+		view.addAction(UIAction(identifier: Self.actionID) { _ in
 			self.action(view.selectedColor)
-		}), for: .valueChanged)
+		}, for: .valueChanged)
 	}
 }
 

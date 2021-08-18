@@ -7,23 +7,22 @@
 
 import SwiftUI
 
-struct HIDefaultButton: View, UIViewRepresentable {
-	typealias UIViewType = UIButton
-	let view = UIButton(type:.system)
-	var title = ""
-	var action = {}
-	
-	func makeUIView(context: Context) -> UIViewType {
+struct HIDefaultButton: UIViewRepresentable {
+	let title: String
+	let action: () -> Void
+
+	private static let actionID = UIAction.Identifier(UUID().uuidString)
+
+	func makeUIView(context: Context) -> UIButton {
+		let view = UIButton(type:.system)
 		view.role = .primary
 		return view
 	}
 	
-	func updateUIView(_ uiView: UIViewType, context: Context) {
+	func updateUIView(_ view: UIViewType, context: Context) {
 		view.setTitle(title, for: .normal)
-		view.addAction(UIAction(handler: { _ in
-			self.action()
-		}), for: .touchUpInside)
-		
+		view.removeAction(identifiedBy: Self.actionID, for: .primaryActionTriggered)
+		view.addAction(UIAction(identifier: Self.actionID) { _ in action() }, for: .primaryActionTriggered)
 		view.setContentHuggingPriority(.required, for: .horizontal) // << here !!
 		view.setContentHuggingPriority(.required, for: .vertical)
 	}
