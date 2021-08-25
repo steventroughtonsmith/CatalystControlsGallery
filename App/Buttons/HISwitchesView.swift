@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HISwitchView: View, UIViewRepresentable {
+struct HISwitchView: UIViewRepresentable {
 	typealias UIViewType = UISwitch
 	let view = UISwitch()
 	var value = false

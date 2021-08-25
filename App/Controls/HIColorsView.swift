@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct HIColorWell: View, UIViewRepresentable {
+struct HIColorWell: UIViewRepresentable {
 	typealias UIViewType = UIColorWell
 	let view = UIColorWell()
 	var action:(_ color:UIColor?) -> Void = { color in }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 	var body: some View {
-		MacTabView(titles:["Buttons", "Controls", "Containers", "Text"]) {
+		MacTabView(titles:["Buttons", "Controls", "Containers", "Tables", "Text"]) {
 			ScrollView {
 				VStack (alignment:.leading) {
 					HIButtonsView()
@@ -38,6 +38,14 @@ struct ContentView: View {
 				VStack (alignment:.leading) {
 					HIGroupBoxView()
 					HITabView()
+				}
+				.padding()
+				
+			}
+			
+			ScrollView {
+				VStack (alignment:.leading) {
+					HITablesView()
 				}
 				.padding()
 				

@@ -28,6 +28,9 @@
 		B09DC23826CC642A00804044 /* HITabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23726CC642A00804044 /* HITabViewController.swift */; };
 		B09DC23B26CC73D600804044 /* HITextViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23A26CC73D600804044 /* HITextViewsView.swift */; };
 		B09DC23D26CC749300804044 /* HILabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09DC23C26CC749300804044 /* HILabelsView.swift */; };
+		B0F8615A26D6B588009EA700 /* HIOutlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8615926D6B588009EA700 /* HIOutlineViewController.swift */; };
+		B0F8615C26D6B682009EA700 /* HITablesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8615B26D6B682009EA700 /* HITablesView.swift */; };
+		B0F8615E26D6C8B3009EA700 /* HISidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8615D26D6C8B3009EA700 /* HISidebarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		B09DC23A26CC73D600804044 /* HITextViewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITextViewsView.swift; sourceTree = "<group>"; };
 		B09DC23C26CC749300804044 /* HILabelsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HILabelsView.swift; sourceTree = "<group>"; };
 		B09DC23E26CC784100804044 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0F8615926D6B588009EA700 /* HIOutlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIOutlineViewController.swift; sourceTree = "<group>"; };
+		B0F8615B26D6B682009EA700 /* HITablesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HITablesView.swift; sourceTree = "<group>"; };
+		B0F8615D26D6C8B3009EA700 /* HISidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HISidebarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,7 @@
 				85FB1EF626CD909A00BEF049 /* Controls */,
 				85FB1EF726CD90C800BEF049 /* Containers */,
 				85FB1EF826CD90E700BEF049 /* Text */,
+				B0F8615826D6B567009EA700 /* Tables */,
 				B0455F3526CC38CF00751B6A /* Number+Scaling.swift */,
 				B09DC23726CC642A00804044 /* HITabViewController.swift */,
 				B0455F2026CC34DF00751B6A /* Assets.xcassets */,
@@ -155,6 +162,16 @@
 				B09DC23326CC530900804044 /* HISwitchesView.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		B0F8615826D6B567009EA700 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				B0F8615B26D6B682009EA700 /* HITablesView.swift */,
+				B0F8615926D6B588009EA700 /* HIOutlineViewController.swift */,
+				B0F8615D26D6C8B3009EA700 /* HISidebarViewController.swift */,
+			);
+			path = Tables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +247,13 @@
 				B0455F3F26CC420A00751B6A /* HIGroupBoxView.swift in Sources */,
 				B09DC23626CC625900804044 /* HISegmentedControlView.swift in Sources */,
 				B0455F3D26CC40A200751B6A /* HITextFieldsView.swift in Sources */,
+				B0F8615A26D6B588009EA700 /* HIOutlineViewController.swift in Sources */,
 				B0455F3126CC36F400751B6A /* HIRadioButtonsView.swift in Sources */,
 				B09DC23826CC642A00804044 /* HITabViewController.swift in Sources */,
+				B0F8615C26D6B682009EA700 /* HITablesView.swift in Sources */,
 				B0455F2F26CC35E000751B6A /* HICheckboxesView.swift in Sources */,
 				B0455F3326CC382800751B6A /* HIPopUpControlsView.swift in Sources */,
+				B0F8615E26D6C8B3009EA700 /* HISidebarViewController.swift in Sources */,
 				B0455F1F26CC34DE00751B6A /* ContentView.swift in Sources */,
 				B0455F3A26CC3D3200751B6A /* HIProgressIndicatorView.swift in Sources */,
 				B09DC23D26CC749300804044 /* HILabelsView.swift in Sources */,

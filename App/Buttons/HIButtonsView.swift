@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HIDefaultButton: View, UIViewRepresentable {
+struct HIDefaultButton: UIViewRepresentable {
 	typealias UIViewType = UIButton
 	let view = UIButton(type:.system)
 	var title = ""

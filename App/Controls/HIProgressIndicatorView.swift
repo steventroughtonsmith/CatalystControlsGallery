@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HIProgressView: View, UIViewRepresentable {
+struct HIProgressView: UIViewRepresentable {
 	typealias UIViewType = UIProgressView
 	let view = UIProgressView()
 	var value = Float(0)
@@ -21,7 +21,7 @@ struct HIProgressView: View, UIViewRepresentable {
 	}
 }
 
-struct HIActivityIndicatorView: View, UIViewRepresentable {
+struct HIActivityIndicatorView: UIViewRepresentable {
 	typealias UIViewType = UIActivityIndicatorView
 	let view = UIActivityIndicatorView()
 	var active = false

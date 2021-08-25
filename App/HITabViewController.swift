@@ -49,6 +49,22 @@ struct MacTabView: View, UIViewControllerRepresentable {
 		vc.viewControllers = [first, second, third, fourth]
 	}
 	
+	init<A:View, B:View, C:View, D:View, E:View>(titles:[String], @ViewBuilder content: @escaping () -> TupleView <(A,B,C,D,E)>) {
+		let first = UIHostingController(rootView: content().value.0)
+		let second = UIHostingController(rootView: content().value.1)
+		let third = UIHostingController(rootView: content().value.2)
+		let fourth = UIHostingController(rootView: content().value.3)
+		let fifth = UIHostingController(rootView: content().value.4)
+
+		first.title = titles[0]
+		second.title = titles[1]
+		third.title = titles[2]
+		fourth.title = titles[3]
+		fifth.title = titles[4]
+
+		vc.viewControllers = [first, second, third, fourth, fifth]
+	}
+	
 	init<A:View>(@ViewBuilder content: @escaping () -> A) {
 		vc.viewControllers = [UIHostingController(rootView: content())]
 	}

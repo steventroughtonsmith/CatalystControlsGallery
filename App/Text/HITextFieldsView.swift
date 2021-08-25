@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HIBorderedTextFieldView: View, UIViewRepresentable {
+struct HIBorderedTextFieldView: UIViewRepresentable {
 	typealias UIViewType = UITextField
 	let view = UITextField()
 	
@@ -24,7 +24,7 @@ struct HIBorderedTextFieldView: View, UIViewRepresentable {
 	}
 }
 
-struct HISearchFieldView: View, UIViewRepresentable {
+struct HISearchFieldView: UIViewRepresentable {
 	typealias UIViewType = UISearchTextField
 	let view = UISearchTextField()
 	

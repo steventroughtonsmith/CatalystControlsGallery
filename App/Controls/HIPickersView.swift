@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 
-struct HIDateTimePicker: View, UIViewRepresentable {
+struct HIDateTimePicker: UIViewRepresentable {
 	typealias UIViewType = UIDatePicker
 	let view = UIDatePicker()
 	var mode = UIDatePicker.Mode.dateAndTime

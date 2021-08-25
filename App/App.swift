@@ -16,6 +16,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 		window = UIWindow()
 		window?.rootViewController = UIHostingController(rootView: ContentView())
 
+		
 		#if targetEnvironment(macCatalyst)
 		window?.rootViewController?.view.backgroundColor = .clear
 		window?.windowScene?.titlebar?.toolbar = NSToolbar()
