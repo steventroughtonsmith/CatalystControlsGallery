@@ -48,10 +48,13 @@ struct HIProgressIndicatorView: View {
 		VStack(alignment:.leading) {
 			Text("Progress Views")
 				.bold()
-			
+
 			HIProgressView(value: 0.5)
-			HIActivityIndicatorView()
-			HIActivityIndicatorView(active: true)
+
+			HStack(spacing: UIFloat(8)) {
+				HIActivityIndicatorView()
+				HIActivityIndicatorView(active: true)
+			}
 		}
 		.padding()
 	}

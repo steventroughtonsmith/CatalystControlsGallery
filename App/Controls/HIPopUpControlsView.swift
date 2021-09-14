@@ -14,27 +14,26 @@ struct HIPopUpControlsView: View {
 		VStack(alignment:.leading) {
 			Text("Pop-Up Menus")
 				.bold()
-			
-			Picker(selection: $a, label:Group{}, content: {
-				Text("Tinker")
-					.tag(0)
-				Text("Tailor")
-					.tag(1)
-				Text("Soldier")
-					.tag(2)
-				Text("Spy")
-					.tag(3)
-			})
-			
-			
-			
-			
-			Menu {
-				Button("Import") { }
-				Button("Export") { }
 
-			} label: {
-				Text("Advanced")
+			HStack {
+				Picker(selection: $a, label:Group{}, content: {
+					Text("Tinker")
+						.tag(0)
+					Text("Tailor")
+						.tag(1)
+					Text("Soldier")
+						.tag(2)
+					Text("Spy")
+						.tag(3)
+				})
+
+				Menu {
+					Button("Import") { }
+					Button("Export") { }
+
+				} label: {
+					Text("Advanced")
+				}
 			}
 		}
 		.padding()

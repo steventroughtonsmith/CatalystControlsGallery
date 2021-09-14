@@ -13,9 +13,11 @@ struct ContentView: View {
 			ScrollView {
 				VStack (alignment:.leading) {
 					HIButtonsView()
-					HICheckboxesView()
+					HStack (alignment:.top) {
+						HICheckboxesView()
+						HISwitchesView()
+					}
 					HIRadioButtonsView()
-					HISwitchesView()
 					Spacer()
 						.frame(maxWidth:.infinity)
 				}
@@ -23,7 +25,7 @@ struct ContentView: View {
 			}
 			
 			ScrollView {
-				VStack (alignment:.leading) {
+				VStack (alignment:.leading, spacing: 0) {
 					HIPopUpControlsView()
 					HISlidersView()
 					HIProgressIndicatorView()
